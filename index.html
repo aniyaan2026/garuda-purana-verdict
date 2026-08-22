@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Garuda Purana | Karma Verdict</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 50% 15%, #3b0d0d 0%, #120707 35%, #050505 75%);
+    color: #f1d18a;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 25px 16px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+/* HEADER */
+
+.symbol {
+    font-size: 55px;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 15px #c98b32);
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 38px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 18px #a95c18;
+}
+
+.subtitle {
+    margin-top: 8px;
+    color: #c8a96b;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+/* DIVIDER */
+
+.divider {
+    width: 180px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d19a45, transparent);
+    margin: 25px auto;
+}
+
+/* INTRO */
+
+.intro {
+    color: #d4c4a0;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* INPUT */
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #e4bd6a;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 17px;
+    border-radius: 12px;
+    border: 1px solid #70451f;
+    background: rgba(10, 5, 5, 0.9);
+    color: #f3dfad;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #d19a45;
+    box-shadow: 0 0 15px rgba(209,154,69,0.25);
+}
+
+textarea::placeholder {
+    color: #766c5b;
+}
+
+/* BUTTON */
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 17px;
+    border: 1px solid #d19a45;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #5e1717, #250909);
+    color: #f4d58e;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(170,60,20,0.25);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* VERDICT */
+
+.verdict {
+    display: none;
+    margin-top: 30px;
+    padding: 24px 18px;
+    border: 1px solid #75471e;
+    border-radius: 15px;
+    background: rgba(15, 7, 7, 0.95);
+    box-shadow: 0 0 30px rgba(150,70,20,0.18);
+    text-align: left;
+}
+
+.verdict.show {
+    display: block;
+    animation: appear 0.5s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.verdict-title {
+    text-align: center;
+    font-size: 22px;
+    color: #e8bd63;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.field {
+    margin: 17px 0;
+}
+
+.field-name {
+    color: #a99570;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.field-value {
+    margin-top: 5px;
+    color: #f1dfb5;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.naraka {
+    color: #e45b36;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(228,91,54,0.4);
+}
+
+.warning {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #3d2a1a;
+    color: #82765f;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 45px;
+    padding-bottom: 20px;
+    color: #635a4d;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .symbol {
+        font-size: 48px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="symbol">🔱</div>
+
+    <h1>GARUDA PURANA</h1>
+
+    <div class="subtitle">
+        THE KARMA VERDICT
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="intro">
+        Describe the wrongdoing before the judgment.
+        The system will identify the closest recorded
+        category and reveal its traditional karmic consequence.
+    </p>
+
+    <label for="sin">
+        ENTER THE WRONGDOING
+    </label>
+
+    <textarea id="sin"
+        placeholder="Example: A person cheats someone for money..."></textarea>
+
+    <button onclick="judge()">
+        ⚖ JUDGE THE DEED
+    </button>
+
+    <div id="verdict" class="verdict">
+
+        <div class="verdict-title">
+            🔥 THE DEED HAS BEEN JUDGED
+        </div>
+
+        <div class="field">
+            <div class="field-name">Sin / Category</div>
+            <div id="sinResult" class="field-value"></div>
+        </div>
+
+        <div class="field">
+            <div class="field-name">Naraka / Punishment</div>
+            <div id="narakaResult" class="naraka"></div>
+        </div>
+
+        <div class="field">
+            <div class="field-name">Punishment</div>
+            <div id="punishmentResult" class="field-value"></div>
+        </div>
+
+        <div class="field">
+            <div class="field-name">Scriptural Source</div>
+            <div id="sourceResult" class="field-value"></div>
+        </div>
+
+        <div class="warning">
+            This website presents interpretations based on
+            Garuda Purana source material. It is not a real-world
+            legal or religious judgment.
+        </div>
+
+    </div>
+
+    <footer>
+        🔱 GARUDA PURANA • KARMA VERDICT<br>
+        A project for studying traditional descriptions of karma.
+    </footer>
+
+</div>
+
+<script>
+
+function judge() {
+
+    const input = document
+        .getElementById("sin")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const verdict = document.getElementById("verdict");
+
+    if (!input) {
+        alert("Enter a wrongdoing first.");
+        return;
+    }
+
+    let sin = "";
+    let naraka = "";
+    let punishment = "";
+    let source = "";
+
+    /*
+     * TEMPORARY DEMO DATABASE
+     *
+     * We will replace this with our properly
+     * researched Garuda Purana database.
+     */
+
+    if (
+        input.includes("lie") ||
+        input.includes("lying") ||
+        input.includes("false") ||
+        input.includes("falsehood") ||
+        input.includes("false witness")
+    ) {
+
+        sin = "Falsehood / False Witness";
+        naraka = "RAURAVA";
+        punishment =
+            "The Garuda Purana describes severe consequences for false testimony and untruthful conduct. The exact punishment depends on the specific category of wrongdoing described in the text.";
+        source =
+            "Garuda Purana — Preta Kalpa (textual classification; exact verse reference to be added).";
+
+    } else if (
+        input.includes("cheat") ||
+        input.includes("cheating") ||
+        input.includes("fraud") ||
+        input.includes("deceive") ||
+        input.includes("deception")
+    ) {
+
+        sin = "Deception / Cheating";
+        naraka = "RESEARCH DATABASE ENTRY";
+        punishment =
+            "A precise punishment will be displayed here once the corresponding Garuda Purana passage has been verified.";
+        source =
+            "Garuda Purana — source verification pending.";
+
+    } else if (
+        input.includes("kill") ||
+        input.includes("murder") ||
+        input.includes("killing")
+    ) {
+
+        sin = "Killing / Violence";
+        naraka = "RESEARCH DATABASE ENTRY";
+        punishment =
+            "The relevant punishment will be displayed after matching the act to the appropriate Garuda Purana passage.";
+        source =
+            "Garuda Purana — source verification pending.";
+
+    } else {
+
+        sin = "No exact match yet";
+        naraka = "NOT DETERMINED";
+        punishment =
+            "This wrongdoing is not yet in our verified database. We will expand the database with properly sourced Garuda Purana passages.";
+        source =
+            "No verified matching passage in the current database.";
+
+    }
+
+    document.getElementById("sinResult").textContent = sin;
+    document.getElementById("narakaResult").textContent = naraka;
+    document.getElementById("punishmentResult").textContent = punishment;
+    document.getElementById("sourceResult").textContent = source;
+
+    verdict.classList.add("show");
+
+    verdict.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+</script>
+
+</body>
+</html>
