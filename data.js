@@ -588,4 +588,275 @@ const GARUDA_VERDICTS = [
       "Garuda Purana, Preta Kalpa, Naraka classification."
   }
 
+  {
+    id: "raurava",
+    keywords: [
+      "cruel to others",
+      "cruel person",
+      "causes suffering",
+      "deliberately causes suffering",
+      "harms innocent people",
+      "false witness",
+      "false testimony",
+      "lies about someone",
+      "malicious accusation"
+    ],
+    sin: "Cruelty / Serious Harm to Others",
+    naraka: "RAURAVA",
+    punishment:
+      "The sinner is subjected to terrifying torment in Raurava. The name is associated with the cries and suffering experienced by those undergoing punishment there.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka descriptions."
+  },
+
+  {
+    id: "maha-raurava",
+    keywords: [
+      "extreme cruelty",
+      "extreme violence",
+      "severe cruelty",
+      "deliberately torture",
+      "tortures people",
+      "torture innocent people",
+      "causes extreme suffering"
+    ],
+    sin: "Extreme Cruelty",
+    naraka: "MAHARAURAVA",
+    punishment:
+      "The sinner undergoes extremely severe torment in Maharaurava, described as a place of terrible suffering.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "tamisra",
+    keywords: [
+      "steal wealth",
+      "steal property",
+      "stealing property",
+      "steal someone's belongings",
+      "rob someone",
+      "robbery",
+      "deprive someone of property",
+      "take another person's wealth"
+    ],
+    sin: "Deprivation / Theft of Another's Property",
+    naraka: "TAMISRA",
+    punishment:
+      "The sinner is subjected to severe deprivation and darkness under the punishment of Yama.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "andha-tamisra",
+    keywords: [
+      "deceive wife",
+      "deceive husband",
+      "deceive family",
+      "betray spouse",
+      "betray one's spouse",
+      "cheat spouse",
+      "deceive someone about family"
+    ],
+    sin: "Serious Domestic Deception",
+    naraka: "ANDHATAMISRA",
+    punishment:
+      "The sinner is subjected to the darkness and terrible suffering associated with Andhatamisra.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "kalasutra",
+    keywords: [
+      "kill brahmana",
+      "kill a brahmin",
+      "murder brahmana",
+      "murder brahmin",
+      "kill spiritual teacher",
+      "murder spiritual teacher"
+    ],
+    sin: "Killing a Brahmana / Grave Religious Killing",
+    naraka: "KALASUTRA",
+    punishment:
+      "The sinner is subjected to the terrible heat and torment associated with Kalasutra.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "asipatravana",
+    keywords: [
+      "habitually angry",
+      "habitual anger",
+      "wrathful",
+      "impure person",
+      "impure conduct",
+      "violent temper",
+      "rage against people"
+    ],
+    sin: "Habitual Wrath / Impure Conduct",
+    naraka: "ASIPATRAVANA",
+    punishment:
+      "The sinner is punished in the forest of sword-like leaves. The leaves are described as cutting the body as the sinner moves through the forest.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "taptakumbha",
+    keywords: [
+      "kill wife",
+      "kills wife",
+      "murder wife",
+      "kill husband",
+      "murder husband",
+      "kill spouse",
+      "murder spouse",
+      "kill son",
+      "murder son",
+      "kill daughter",
+      "murder daughter"
+    ],
+    sin: "Murder of Close Family / Grave Killing",
+    naraka: "TAPTAKUMBHA",
+    punishment:
+      "The sinner is subjected to extreme heat and torment associated with heated vessels or cauldrons.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "sandaṃsha",
+    keywords: [
+      "break religious vow",
+      "break vow",
+      "break vows",
+      "neglect sacrifice",
+      "neglect religious observance",
+      "abandon religious observance"
+    ],
+    sin: "Breaking a Vow / Neglecting Sacrificial Duty",
+    naraka: "SANDAMSHA",
+    punishment:
+      "The sinner is subjected to the severe punishment associated with Sandamsha.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "shabala",
+    keywords: [
+      "insult guru",
+      "insult teacher",
+      "abuse guru",
+      "abuse teacher",
+      "verbally attack guru",
+      "verbally attack teacher",
+      "despise guru"
+    ],
+    sin: "Abusing / Despising a Guru",
+    naraka: "SHABALA",
+    punishment:
+      "The sinner is sent to Shabala, one of the Narakas described in the text.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "avici",
+    keywords: [
+      "false oath",
+      "swear falsely",
+      "swears falsely",
+      "false promise under oath",
+      "lie under oath",
+      "perjury"
+    ],
+    sin: "False Oath",
+    naraka: "AVICI",
+    punishment:
+      "The sinner is subjected to the terrible punishment associated with Avici.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  },
+
+  {
+    id: "kumbhipaka",
+    keywords: [
+      "kill animals for pleasure",
+      "kill animals for enjoyment",
+      "kill animals for sense gratification",
+      "cook animals",
+      "cooks animals",
+      "cook birds",
+      "cooks birds",
+      "kill birds for pleasure",
+      "hunt animals for pleasure",
+      "animal killing for pleasure"
+    ],
+    sin: "Killing / Cooking Living Creatures for Pleasure",
+    naraka: "KUMBHIPAKA",
+    punishment:
+      "The sinner is cooked in boiling oil in a great cauldron. The punishment mirrors the act of cooking living creatures.",
+    source:
+      "Garuda Purana, Preta Kalpa, Kumbhipaka description."
+  },
+
+  {
+    id: "taptaloha",
+    keywords: [
+      "sexual misconduct",
+      "sexual abuse",
+      "sexual violation",
+      "forced sexual intercourse",
+      "rape",
+      "rapes",
+      "raped",
+      "sexual violence"
+    ],
+    sin: "Grave Sexual Misconduct",
+    naraka: "TAPTAKUMBHA / HEATED METAL PUNISHMENT",
+    punishment:
+      "The sinner is subjected to severe heat and is described in the tradition as being forced to embrace a figure of heated metal.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka/punishment descriptions."
+  },
+
+  {
+    id: "vaitarani",
+    keywords: [
+      "harm good people",
+      "malign good people",
+      "false allegations against good people",
+      "slander innocent people",
+      "take pleasure in others misery",
+      "refuse to repay debt",
+      "betray confidence",
+      "poison someone",
+      "steal temple property"
+    ],
+    sin: "Serious Wrongdoing Leading to Yama's Path",
+    naraka: "VAITARANI",
+    punishment:
+      "The sinner falls into the dreadful Vaitarani, described as a terrible river filled with fearsome and painful conditions.",
+    source:
+      "Garuda Purana, Preta Kalpa, Vaitarani account."
+  },
+
+  {
+    id: "mahajvala",
+    keywords: [
+      "extreme religious transgression",
+      "grave religious offence",
+      "severe religious offence"
+    ],
+    sin: "Grave Religious Transgression",
+    naraka: "MAHAJVALA",
+    punishment:
+      "The sinner undergoes severe burning and torment in Mahajvala.",
+    source:
+      "Garuda Purana, Preta Kalpa, Naraka classification."
+  }
 ];
